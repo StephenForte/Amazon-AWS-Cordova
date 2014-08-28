@@ -60,12 +60,7 @@ Note that if you do not specify a callback, the operation will return an AWS.Req
 
 
 
-In order to make requests, once you have obtained the credentials from aws console. You need to set it in the following way before making autheticated calls:
-
-    AWS.config.update({accessKeyId: '## YOU ACCESS KEY ##', secretAccessKey: '## YOUR SECRET ##'});
-
-
-Once completed, you can make requests in the following way:
+You need to obtain the access and secret keys in order to install the plugin. Once completed you can make requests in the following way where the plugin automatically sets the keys in `AWS.config`:
 
       var s3 = new AWS.S3();
 
