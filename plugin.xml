@@ -7,15 +7,9 @@
 		<clobbers target="AWS" />
 	</js-module>
 
-
     <preference name="ACCESS_KEY" />
     <preference name="SECRET_KEY" />
-
-    <engines>
-    	<!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
-    	<engine name="cordova" version=">=3.3.0" />
-    </engines>
-
+  
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="AWS">
