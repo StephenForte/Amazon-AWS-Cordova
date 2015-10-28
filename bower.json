@@ -1,0 +1,19 @@
+{
+  "name": "Amazon-AWS-Cordova",
+  "version": "1.0.1",
+  "authors": [
+    "Telerik Inc."
+  ],
+  "directory": "www/",
+  "description": "Amazon AWS Cordova API",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aws-sdk-js": "~2.2.12"
+  }
+}

@@ -1,28 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.amazon.aws" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.amazon.aws" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>Amazon AWS</name>
 	<author>Telerik Inc.</author>
-	
-	<js-module name="AWS" src="www/aws.js">
-		<clobbers target="AWS" />
+
+
+	<js-module name="aws-sdk-js" src="www/aws-sdk-js/dist/aws-sdk.min.js">
+			<clobbers target="aws-sdk-js" />
 	</js-module>
+
+	<js-module name="AWS" src="www/aws.js">
+		<clobbers target="AWS"/>
+	</js-module>
+
 
     <preference name="ACCESS_KEY" />
     <preference name="SECRET_KEY" />
-  
+
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="AWS">
 				<param name="ios-package" value="CDVAmazon" />
 			</feature>
 		</config-file>
-		    
+
 		<source-file src="src/ios/CDVAmazon.m" />
 
 		<config-file target="*-Info.plist" parent="AccessKey">
             <string>$ACCESS_KEY</string>
         </config-file>
-        
+
         <config-file target="*-Info.plist" parent="SecretKey">
             <string>$SECRET_KEY</string>
         </config-file>
@@ -45,6 +51,6 @@
 
      	<source-file src="src/android/AmazonPlugin.java"  target-dir="src/com/amazon/aws" />
 
-	</platform>	
+	</platform>
 
 </plugin>
