@@ -1,0 +1,18 @@
+{
+  "version": "1.1.0",
+  "name": "cordova-plugin-amazon-aws",
+  "cordova_name": "Amazon-AWS SDK",
+  "description": "The AWS SDK for JavaScript enables developers to build libraries and applications that use AWS services.",
+  "license": "MIT",
+  "repo": "https://github.com/sebinbenjamin/Amazon-AWS-Cordova",
+  "issue": "",
+  "keywords": [],
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "engines": [{
+    "name": "cordova",
+    "version": ">=3.5.0"
+  }]
+}
